@@ -99,18 +99,23 @@
   </div>
 </footer>
 
-  <script>
-    function toggleTable() {
-  
-      // Optional: change button text
-      const button = event.target;
-      if (container.classList.contains("show")) {
-        button.textContent = "Hide Time Table";
-      } else {
-        button.textContent = "Show Time Table";
-      }
+<script>
+  function toggleTable() {
+    const container = document.getElementById("table-container");
+    const button = event.target;
+
+    // Toggle the "show" class to display/hide the table
+    container.classList.toggle("show");
+
+    // Change button text
+    if (container.classList.contains("show")) {
+      button.textContent = "Hide Time Table";
+    } else {
+      button.textContent = "Show Time Table";
     }
-  </script>
+  }
+</script>
+
 </body>
 </html>
 <!-- End of code snippet -->

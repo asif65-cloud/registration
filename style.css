@@ -90,10 +90,10 @@ footer p {
 #table-container {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 1s ease-in-out;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
 }
+
 
 /* When shown */
 #table-container.show {
